@@ -1,6 +1,1 @@
-/client/node_modules
-/client/.cache
-/client/dist
-/client/dev
-
-/server/node_modules
+/node_modules
