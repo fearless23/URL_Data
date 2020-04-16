@@ -1,6 +1,6 @@
 const http = require("http");
 const urlMeta = require("url-metadata");
-const PORT = 3000;
+const PORT = process.env.PORT || 3000;
 
 const sendError = (res, msg) => {
   res.writeHead(400, { "Content-Type": "application/json" });
