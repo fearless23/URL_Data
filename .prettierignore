@@ -1,1 +1,4 @@
 dist
+dev
+.cache
+node_module

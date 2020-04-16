@@ -1,5 +1,7 @@
 // Your web app's Firebase configuration
-import { firestore, initializeApp, analytics } from "firebase";
+import * as firebase from 'firebase/app';
+import 'firebase/analytics'
+import 'firebase/firestore'
 
 const firebaseConfig = {
   apiKey: "AIzaSyAaLfyQSlUZsHFY7K5CoGUwSenR1o-m-UA",
@@ -12,9 +14,10 @@ const firebaseConfig = {
   measurementId: "G-PED5NZW0QK",
 };
 
-const app = initializeApp(firebaseConfig);
-analytics(app);
+const app = firebase.initializeApp(firebaseConfig);
+app.analytics()
+// firebase.analytics(app);
 
-const urlsColl = firestore().collection("urls");
+const urlsColl = app.firestore().collection("urls");
 
 export { urlsColl };

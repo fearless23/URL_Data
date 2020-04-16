@@ -7,6 +7,7 @@ const cel = (tag: string, ...classes: string[]) => {
 };
 
 const textPad = (text: string, length: number, pad = " ...") => {
+  if(!text) return "--NA--"
   return text.length <= length ? text : text.substring(0, length) + pad;
 };
 /*
