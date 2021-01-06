@@ -13,7 +13,7 @@
     "build": "rm -rf dist && parcel build src/index.html -d dist --no-source-maps"
   },
   "dependencies": {
-    "axios": "^0.19.2",
+    "axios": "^0.21.1",
     "bulma": "^0.8.2",
     "firebase": "^7.14.0"
   },
